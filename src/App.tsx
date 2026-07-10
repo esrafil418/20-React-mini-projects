@@ -1,3 +1,9 @@
+import TreeView from "./components";
+
 export default function App() {
-	return <div>App</div>;
+	return (
+		<div>
+			<TreeView />
+		</div>
+	);
 }
