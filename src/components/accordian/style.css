@@ -1,9 +1,27 @@
 .wrapper {
 	display: flex;
+	flex-direction: column;
+	gap: 25px;
 	height: 100vh;
 	width: 100vw;
 	justify-content: center;
 	align-items: center;
+}
+.enable {
+	padding: 10px 20px;
+	border-radius: 10px;
+	border: none;
+	outline: none;
+	background: rgba(255, 124, 124, 0.555);
+	font-size: 1.2rem;
+	cursor: pointer;
+	transition: all 1s;
+	color: rgba(0, 0, 0, 0.7);
+}
+
+.enable:hover {
+	box-shadow: 0 0 10px 3px orange;
+	color: black;
 }
 
 .accordion {
@@ -11,19 +29,20 @@
 }
 
 .item {
-	background: rgba(2, 119, 90, 0.8);
+	background: rgba(209, 144, 144, 0.795);
+
 	margin-bottom: 10px;
 	padding: 20px 30px;
 	border-radius: 5px;
 }
 
 .title {
-	color: #e9e9e9;
+	color: black;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	cursor: pointer;
-	background-color: rgba(121, 57, 182, 0.8);
+	background-color: rgba(231, 158, 0, 0.842);
 	border-radius: 10px;
 	width: 100%;
 	border: none;
@@ -32,13 +51,13 @@
 }
 
 .content {
-	color: #e9e9e9;
+	color: black;
 	height: auto;
 	margin-top: 10px;
 }
 
 .plus {
-	color: #e9e9e9;
+	color: black;
 	font-weight: bold;
 	margin: 0 10px;
 	font-size: large;
